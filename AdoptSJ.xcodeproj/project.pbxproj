@@ -14,6 +14,7 @@
 		B18CD8431E6B513700D8C8E9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B18CD8421E6B513700D8C8E9 /* Images.xcassets */; };
 		B18CD8461E6B513700D8C8E9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B18CD8441E6B513700D8C8E9 /* LaunchScreen.xib */; };
 		B18CD8521E6B513800D8C8E9 /* AdoptSJTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18CD8511E6B513800D8C8E9 /* AdoptSJTests.swift */; };
+		B18CD85C1E6B579C00D8C8E9 /* AdoptionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18CD85B1E6B579C00D8C8E9 /* AdoptionTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		B18CD84B1E6B513800D8C8E9 /* AdoptSJTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdoptSJTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B18CD8501E6B513800D8C8E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B18CD8511E6B513800D8C8E9 /* AdoptSJTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdoptSJTests.swift; sourceTree = "<group>"; };
+		B18CD85B1E6B579C00D8C8E9 /* AdoptionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdoptionTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				B18CD8421E6B513700D8C8E9 /* Images.xcassets */,
 				B18CD8441E6B513700D8C8E9 /* LaunchScreen.xib */,
 				B18CD8371E6B513700D8C8E9 /* Supporting Files */,
+				B18CD85B1E6B579C00D8C8E9 /* AdoptionTableViewController.swift */,
 			);
 			path = AdoptSJ;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				B18CD83E1E6B513700D8C8E9 /* SecondViewController.swift in Sources */,
 				B18CD83A1E6B513700D8C8E9 /* AppDelegate.swift in Sources */,
 				B18CD83C1E6B513700D8C8E9 /* FirstViewController.swift in Sources */,
+				B18CD85C1E6B579C00D8C8E9 /* AdoptionTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
