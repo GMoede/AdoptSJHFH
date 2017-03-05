@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MessageUI
 
 
 
@@ -98,7 +99,31 @@ class EmailFormViewController: UIViewController, UITextFieldDelegate, UITextView
         }
     }
 
+    @IBAction func createEmailToSend(_ sender: UIButton){
+        if !MFMailComposeViewController.canSendMail() {
+            print("Mail services are not available")
+            return
+        }
+        
+        let composeVC = MFMailComposeViewController()
+        composeVC.mailComposeDelegate = self
+        
+        // Configure the fields of the interface.
+        composeVC.setToRecipients(["nsgood2@gmail.com"])
+        composeVC.setSubject("Hello!")
+        composeVC.setMessageBody("Hello from California!", isHTML: false)
+        
+        // Present the view controller modally.
+        self.present(composeVC, animated: true, completion: nil)
+    }
     
+    func mailComposeController(_ controller: MFMailComposeViewController,
+                               didFinishWith result: MFMailComposeResult, error: Error?) {
+        // Check the result or perform other tasks.
+        
+        // Dismiss the mail compose view controller.
+        controller.dismiss(animated: true, completion: nil)
+    }
     
     
     
