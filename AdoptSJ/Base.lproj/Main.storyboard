@@ -218,7 +218,6 @@
                                 <state key="normal" title="Submit Form"/>
                                 <connections>
                                     <action selector="createEmailToSend:" destination="Ogy-PJ-OHB" eventType="touchUpInside" id="g0b-xW-3P2"/>
-                                    <action selector="submitForm:" destination="Ogy-PJ-OHB" eventType="touchUpInside" id="8Az-MF-cVN"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8ZD-8F-zML">
@@ -306,6 +305,5 @@
     </scenes>
     <resources>
         <image name="AdoptSJ40" width="40" height="40"/>
-        <image name="regular-profile40" width="40" height="40"/>
     </resources>
 </document>

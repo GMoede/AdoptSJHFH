@@ -18,6 +18,7 @@ class EmailFormViewController: UIViewController, UITextFieldDelegate, UITextView
     var name: String?
     var address: String?
     var userName = "Nick Goodpaster"
+    var realm: Realm?
     
 
     @IBOutlet weak var placeName: UITextField!
@@ -92,6 +93,7 @@ class EmailFormViewController: UIViewController, UITextFieldDelegate, UITextView
         // Pass the selected object to the new view controller.
     }
     */
+    /*
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "submitForm"){
             //let nextScene = segue.destination as! AdoptionTableViewController
@@ -100,7 +102,17 @@ class EmailFormViewController: UIViewController, UITextFieldDelegate, UITextView
         }
     }
 
+ */
     @IBAction func createEmailToSend(_ sender: UIButton){
+        let submittedItem = AdoptionItem()
+        submittedItem.name = self.placeName.text
+        submittedItem.address = self.placeAddress.text
+        submittedItem.desc = self.adoptionPreferences.text
+        submittedItem.status = false
+        realm = try! Realm()
+        try! realm?.write {
+            realm?.add(submittedItem)
+        }
         if !MFMailComposeViewController.canSendMail() {
             print("Mail services are not available")
             return
@@ -128,15 +140,6 @@ class EmailFormViewController: UIViewController, UITextFieldDelegate, UITextView
     func mailComposeController(_ controller: MFMailComposeViewController,
                                didFinishWith result: MFMailComposeResult, error: Error?) {
         // Check the result or perform other tasks.
-        let submittedItem = AdoptionItem()
-        submittedItem.name = self.placeName.text
-        submittedItem.address = self.placeAddress.text
-        submittedItem.desc = self.adoptionPreferences.text
-        submittedItem.status = false
-        let realm = try! Realm()
-        try! realm.write {
-            realm.add(submittedItem)
-        }
         
         
         

@@ -49,9 +49,17 @@ class AdoptionTableViewController: UITableViewController {
         testItem1.desc = "Cool place to be. We got two nicks here right now which is right crazy dog."
         testItem1.status = false
         //testItem1.save()
+        
+        
+        
+        
+        setupRealm()
+        try! realm = Realm()
+        try! realm.write {
+            realm.deleteAll()
+        }
         items.append(testItem1)
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        setupRealm()
 
     }
     
