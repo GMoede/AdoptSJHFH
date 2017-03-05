@@ -13,6 +13,7 @@ class EmailFormViewController: UIViewController, UITextFieldDelegate, UITextView
 
     var name: String?
     var address: String?
+    var userName = "Nick Goodpaster"
     
     @IBOutlet weak var placeName: UITextField!
     @IBOutlet weak var placeAddress: UITextField!
@@ -98,8 +99,15 @@ class EmailFormViewController: UIViewController, UITextFieldDelegate, UITextView
         
         // Configure the fields of the interface.
         composeVC.setToRecipients(["nsgood2@gmail.com"])
-        composeVC.setSubject("Hello!")
-        composeVC.setMessageBody("Hello from California!", isHTML: false)
+        composeVC.setSubject("Adoption Request")
+        let emailGreet = "Hello San Jose Mayor's Office,"
+        let emailBodyFirst = "\n\nI, " + userName + ", would like to make an adoption at the following location via the Adopt San Jose app:"
+        let emailDetailsFirst = "\n\n\tLocation Name: " + placeName.text! + "\n\tLocation Address: " + placeAddress.text! + "\n\tPreferences: " + adoptionPreferences.text!
+        //let emailBodySecond = "\n\nHere are my preferences for this adoption:"
+        //let emailDetailsSecond = "\n\n\t" + adoptionPreferences.text!
+        let emailBodyThird = "\n\nThank you for the consideration!"
+        let emailSignature = "\n\n" + userName + "\n" + phoneNumber.text! + "\n" + emailAddress.text!
+        composeVC.setMessageBody(emailGreet + emailBodyFirst + emailDetailsFirst + emailBodyThird + emailSignature, isHTML: false)
         
         // Present the view controller modally.
         self.present(composeVC, animated: true, completion: nil)
@@ -109,10 +117,25 @@ class EmailFormViewController: UIViewController, UITextFieldDelegate, UITextView
                                didFinishWith result: MFMailComposeResult, error: Error?) {
         // Check the result or perform other tasks.
         
+        print(result.rawValue)
+        
         // Dismiss the mail compose view controller.
         controller.dismiss(animated: true, completion: nil)
+        if (result.rawValue == 2){
+            if let navController = self.navigationController {
+                navController.popViewController(animated: true)
+                tabBarController?.selectedIndex = 1
+                /*if self.window!.rootViewController as? UITabBarController != nil {
+                    var tababarController = self.window!.rootViewController as UITabBarController
+                    tababarController.selectedIndex = 1
+                */
+                }
+            }
+        }
     }
     
+    //func backToPicker
     
     
-}
+    
+
