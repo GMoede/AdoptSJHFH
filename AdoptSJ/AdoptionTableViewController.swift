@@ -42,6 +42,9 @@ class AdoptionTableViewController: UITableViewController {
             print(selectedAdoption.name)
             //print(nextScene?.selectedAdoption)
             //print(selectedAdoption.name)
+            let backItem = UIBarButtonItem()
+            backItem.title = "Back"
+            nextScene.navigationController.navigationItem.backBarButtonItem = backItem
             
         }
     }
