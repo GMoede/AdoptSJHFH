@@ -12,7 +12,7 @@ class AdoptionItems: NSObject {
     var sections:[String] = []
     var items:[[AdoptionItem]] = []
     
-    func addSection(section: String, item: [AdoptionItem]){
+    func addSection(_ section: String, item: [AdoptionItem]){
         sections = sections + [section]
         items = items + [item]
     }
@@ -23,10 +23,10 @@ class SpecificMenuItems: AdoptionItems {
     override init() {
         super.init()
         
-        addSection(section: "Pending", item: [
+        addSection("Pending", item: [
             AdoptionItem(name:"Brick House",address:"755 Locust Street", desc: "Cool Place")
             ])
-        addSection(section: "Approved", item: [
+        addSection("Approved", item: [
             AdoptionItem(name:"Grandmas Cottage",address:"755 Locust Street", desc: "Cool Place")
             ])
     }

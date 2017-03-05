@@ -1,11 +1,8 @@
 {
   "images" : [
     {
-      "idiom" : "universal"
-    },
-    {
       "idiom" : "universal",
-      "filename" : "AdoptSJ40.png",
+      "filename" : "AdoptSJ.jpg",
       "scale" : "1x"
     },
     {

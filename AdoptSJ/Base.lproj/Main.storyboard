@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Adoption Table View Controller-->
         <scene sceneID="H4b-U1-Gcn">
             <objects>
                 <tableViewController id="Vdu-dy-Feg" customClass="AdoptionTableViewController" customModule="AdoptSJ" customModuleProvider="target" sceneMemberID="viewController">
@@ -51,7 +51,9 @@
                             <outlet property="delegate" destination="Vdu-dy-Feg" id="BmW-2x-RY6"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="N97-8D-Qmz"/>
+                    <tabBarItem key="tabBarItem" title="" image="second" selectedImage="second" id="N97-8D-Qmz">
+                        <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
+                    </tabBarItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fo6-Uv-KQz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -76,7 +78,7 @@
             </objects>
             <point key="canvasLocation" x="2560.8000000000002" y="-433.13343328335833"/>
         </scene>
-        <!--Second-->
+        <!--Second View Controller-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="AdoptSJ" customModuleProvider="target" sceneMemberID="viewController">
@@ -140,7 +142,9 @@
                             <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="" image="first" selectedImage="first" id="cPa-gy-q4n">
+                        <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="addressLabel" destination="Wj2-su-hLi" id="Y26-3B-i9M"/>
                         <outlet property="nameLabel" destination="65e-k9-grA" id="FuT-RI-y0K"/>
@@ -193,7 +197,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8vo-pD-ujg" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NyP-SC-3o5">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="NyP-SC-3o5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -226,6 +230,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="second" width="30" height="30"/>
+        <image name="first" width="40" height="40"/>
+        <image name="second" width="40" height="40"/>
     </resources>
+    <color key="tintColor" red="0.44448804860897329" green="0.673367240702204" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

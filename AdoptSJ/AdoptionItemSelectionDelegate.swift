@@ -10,5 +10,5 @@ import UIKit
 
 
 protocol AdoptionItemSelectionDelegate{
-    func didSelectMenuItem(controller: UITableViewController, adoptionItem:AdoptionItem)
+    func didSelectMenuItem(_ controller: UITableViewController, adoptionItem:AdoptionItem)
 }
