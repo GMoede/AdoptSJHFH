@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		02DEF173676E90196C1A845E /* Pods_AdoptSJ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2062E243D914A95C719FCD2D /* Pods_AdoptSJ.framework */; };
+		1F21B28C1E6BA961000B6F68 /* AdoptionItemSelectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F21B28B1E6BA961000B6F68 /* AdoptionItemSelectionDelegate.swift */; };
+		1F21B28E1E6BAC15000B6F68 /* AdoptionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F21B28D1E6BAC15000B6F68 /* AdoptionDetailViewController.swift */; };
 		8433D4A2EFB16FDB2C853AF0 /* Pods_AdoptSJTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65A2FD6D1516E2D8B40A9174 /* Pods_AdoptSJTests.framework */; };
 		B18CD83A1E6B513700D8C8E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18CD8391E6B513700D8C8E9 /* AppDelegate.swift */; };
 		B18CD83C1E6B513700D8C8E9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18CD83B1E6B513700D8C8E9 /* FirstViewController.swift */; };
@@ -32,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F21B28B1E6BA961000B6F68 /* AdoptionItemSelectionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdoptionItemSelectionDelegate.swift; sourceTree = "<group>"; };
+		1F21B28D1E6BAC15000B6F68 /* AdoptionDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdoptionDetailViewController.swift; sourceTree = "<group>"; };
 		2062E243D914A95C719FCD2D /* Pods_AdoptSJ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdoptSJ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FAEDB95B9204BF9207C1A9A /* Pods-AdoptSJTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdoptSJTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AdoptSJTests/Pods-AdoptSJTests.release.xcconfig"; sourceTree = "<group>"; };
 		4CC0B815E026A733CE0C7650 /* Pods-AdoptSJ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdoptSJ.release.xcconfig"; path = "Pods/Target Support Files/Pods-AdoptSJ/Pods-AdoptSJ.release.xcconfig"; sourceTree = "<group>"; };
@@ -118,6 +122,8 @@
 			isa = PBXGroup;
 			children = (
 				B18CD8391E6B513700D8C8E9 /* AppDelegate.swift */,
+				1F21B28D1E6BAC15000B6F68 /* AdoptionDetailViewController.swift */,
+				1F21B28B1E6BA961000B6F68 /* AdoptionItemSelectionDelegate.swift */,
 				B18CD83B1E6B513700D8C8E9 /* FirstViewController.swift */,
 				B18CD83D1E6B513700D8C8E9 /* SecondViewController.swift */,
 				B18CD83F1E6B513700D8C8E9 /* Main.storyboard */,
@@ -356,11 +362,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B18CD83E1E6B513700D8C8E9 /* SecondViewController.swift in Sources */,
+				1F21B28E1E6BAC15000B6F68 /* AdoptionDetailViewController.swift in Sources */,
 				B18CD8601E6B6F4400D8C8E9 /* AdoptionItem.swift in Sources */,
 				B18CD8621E6B70B200D8C8E9 /* AdoptionItems.swift in Sources */,
 				B18CD83A1E6B513700D8C8E9 /* AppDelegate.swift in Sources */,
 				B18CD83C1E6B513700D8C8E9 /* FirstViewController.swift in Sources */,
 				B18CD85E1E6B6BB900D8C8E9 /* AdoptionTableViewController.swift in Sources */,
+				1F21B28C1E6BA961000B6F68 /* AdoptionItemSelectionDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
