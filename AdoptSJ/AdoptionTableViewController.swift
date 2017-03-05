@@ -23,7 +23,11 @@ class AdoptionTableViewController: UITableViewController {
     AdoptionItem(name:"Grandmas Cottage",address:"755 Locust Street", desc: "Cool Place")
     ])
     */
+    
+
     var items = List<AdoptionItem>()
+    var notificationToken: NotificationToken!
+    var realm: Realm!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -102,16 +106,18 @@ class AdoptionTableViewController: UITableViewController {
     var address: String?
     var desc: String?
     var status: String?
-    
-    var notificationToken: NotificationToken!
-    var realm: Realm!
+    var dummyItem: AdoptionItem!
+  
+
     
     func add() {
-        let addedItem = AdoptionItem()
-        addedItem.name = name
-        addedItem.address = address
-        addedItem.desc = desc
-        addedItem.status = false
+        
+        var addedItem = AdoptionItem()
+        addedItem = dummyItem
+        //addedItem.name = name
+        //addedItem.address = address
+        //addedItem.desc = desc
+        //addedItem.status = false
         let items = self.items
         try! items.realm?.write {
             items.insert(addedItem, at: items.filter("status = false").count)
@@ -149,9 +155,9 @@ class AdoptionTableViewController: UITableViewController {
             }
         }
     }
-    deinit {
+    /*deinit {
         notificationToken.stop()
-    }
+    }*/
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if (section == 0){

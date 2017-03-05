@@ -20,8 +20,6 @@ class EmailFormViewController: UIViewController, UITextFieldDelegate, UITextView
     var userName = "Nick Goodpaster"
     
 
-    @IBAction func submitForm(segue:UIStoryboardSegue) {
-    }
     @IBOutlet weak var placeName: UITextField!
     @IBOutlet weak var placeAddress: UITextField!
     @IBOutlet weak var phoneNumber: UITextField!
@@ -135,6 +133,10 @@ class EmailFormViewController: UIViewController, UITextFieldDelegate, UITextView
         submittedItem.address = self.placeAddress.text
         submittedItem.desc = self.adoptionPreferences.text
         submittedItem.status = false
+        let realm = try! Realm()
+        try! realm.write {
+            realm.add(submittedItem)
+        }
         
         
         
