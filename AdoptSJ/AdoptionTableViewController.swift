@@ -29,6 +29,10 @@ class AdoptionTableViewController: UITableViewController {
     var notificationToken: NotificationToken!
     var realm: Realm!
     
+    override func viewDidAppear(_ animated: Bool) {
+        self.viewDidLoad()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Adoptions"
