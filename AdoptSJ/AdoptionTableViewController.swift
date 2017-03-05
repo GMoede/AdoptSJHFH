@@ -29,14 +29,17 @@ class AdoptionTableViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        print("prepare for segue reached")
         if segue.identifier == "adoptionDetail" {
+            print("segue identifier reached")
             let nextScene = segue.destination as? AdoptionDetailViewController
             let indexPath = self.tableView.indexPathForSelectedRow!
             let row = indexPath.row
             let section = indexPath.section
             let selectedAdoption = adoptionItems.items[section][row]
-            nextScene?.selectedAdoption = selectedAdoption
+            nextScene?.title = selectedAdoption.name
+            //print(nextScene?.selectedAdoption)
+            //print(selectedAdoption.name)
             
         }
     }

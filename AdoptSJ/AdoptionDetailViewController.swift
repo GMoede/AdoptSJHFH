@@ -13,14 +13,16 @@ import UIKit
 
 class AdoptionDetailViewController: UIViewController{
 
-    var row = 0
-    var section = 0
-    var selectedAdoption: AdoptionItem = SpecificMenuItems().items[0][0]
+    //var row = 0
+    //v//ar section = 0
+    ///var selectedAdoption: AdoptionItem = SpecificMenuItems().items[0][0]
     //let selectedAdoption: AdoptionItem
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(selectedAdoption)
+        //self.title =
+        //print("poop")
+        //print(selectedAdoption)
         // Do any additional setup after loading the view.
     }
 

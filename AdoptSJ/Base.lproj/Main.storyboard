@@ -57,10 +57,10 @@
             </objects>
             <point key="canvasLocation" x="744" y="-433"/>
         </scene>
-        <!--View Controller-->
+        <!--Adoption Detail View Controller-->
         <scene sceneID="7mx-GB-ndo">
             <objects>
-                <viewController id="Rq2-wu-2lP" sceneMemberID="viewController">
+                <viewController id="Rq2-wu-2lP" customClass="AdoptionDetailViewController" customModule="AdoptSJ" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PWK-E2-vIW"/>
                         <viewControllerLayoutGuide type="bottom" id="Kg1-I2-Rgq"/>
@@ -166,7 +166,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aIY-df-zpo" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SsV-UZ-84u">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="SsV-UZ-84u">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
