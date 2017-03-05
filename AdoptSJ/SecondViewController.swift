@@ -44,11 +44,15 @@ class SecondViewController: UIViewController {
     }*/
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print(nameLabel.text)
         if (segue.identifier == "formDetail"){
-            let segue.
+            let nextScene = segue.destination as! EmailFormViewController
+            
+            nextScene.name = nameLabel.text
+            nextScene.address = addressLabel.text
         }
     }
-    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         openPickPlace()
