@@ -7,18 +7,11 @@
 //
 
 import UIKit
+import RealmSwift
 
-class AdoptionItem: NSObject {
-    var name = "None"
-    var address = "None"
-    var desc = "None"
-    var status = "Pending"
-    override init(){}
-    init(name:String, address: String, desc: String){
-        self.name = name
-        self.address = address
-        self.desc = desc
-        self.status = "Pending"
-    }
-   
+class AdoptionItem: Object {
+    var name: String?
+    var address: String?
+    var desc: String?
+    var status: String?
 }
