@@ -102,16 +102,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hM-aa-YCb">
-                                <rect key="frame" x="31" y="581" width="72" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Pick Again">
-                                    <color key="titleColor" red="0.41708670349999999" green="0.54287422419999998" blue="0.94293224809999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="reOpenPicker:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="A4f-gH-Oe4"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Egs-Gj-5WT">
                                 <rect key="frame" x="28" y="102" width="319" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -126,10 +116,26 @@
                                     <segue destination="Ogy-PJ-OHB" kind="show" identifier="formDetail" id="bqh-UC-UAF"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hM-aa-YCb">
+                                <rect key="frame" x="28" y="580" width="72" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Pick Again">
+                                    <color key="titleColor" red="0.41708670349999999" green="0.54287422419999998" blue="0.94293224809999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="reOpenPicker:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="A4f-gH-Oe4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="hS4-r8-mk9"/>
+                    <navigationItem key="navigationItem" id="hS4-r8-mk9">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.21097668177890719" green="0.64065444943502758" blue="0.89912564766839376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </navigationItem>
                     <connections>
                         <outlet property="addressLabel" destination="Wj2-su-hLi" id="Y26-3B-i9M"/>
                         <outlet property="nameLabel" destination="65e-k9-grA" id="FuT-RI-y0K"/>
@@ -235,6 +241,15 @@
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+                <navigationBar opaque="NO" contentMode="scaleToFill" translucent="NO" id="O6g-Vt-Hnh">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.33081604600428344" green="0.68290791301127085" blue="0.8490527849740932" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="barTintColor" red="0.11916090923248854" green="0.63162744197065146" blue="0.77384229270000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <items>
+                        <navigationItem title="Title" prompt="" id="7Jj-Tu-NjZ"/>
+                    </items>
+                </navigationBar>
             </objects>
             <point key="canvasLocation" x="-82" y="-126"/>
         </scene>
@@ -246,7 +261,7 @@
                         <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
                     </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="s0M-n4-9yr">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="s0M-n4-9yr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -267,7 +282,7 @@
                         <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
                     </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Nf0-yD-ffg">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Nf0-yD-ffg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -277,6 +292,13 @@
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XA4-kw-d0R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationBar contentMode="scaleToFill" id="JFg-Tw-NqJ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <items>
+                        <navigationItem title="Title" id="Edh-DR-Tm1"/>
+                    </items>
+                </navigationBar>
             </objects>
             <point key="canvasLocation" x="1682.4000000000001" y="-433.13343328335833"/>
         </scene>
