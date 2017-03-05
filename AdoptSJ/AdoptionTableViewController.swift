@@ -28,16 +28,11 @@ class AdoptionTableViewController: UITableViewController {
         // Return the number of rows in the section.
         return adoptionItems.items[section].count
     }
-    /*
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as? UITableViewCell
-        let row = indexPath.row
-        let section = indexPath.section
-        let adoptionItem = adoptionItems.items[section][row]
-        cell?.textLabel?.text = adoptionItem.name
-        cell?.detailTextLabel?.text = adoptionItem.address
-        return cell!
-    }*/
+
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return adoptionItems.sections[section]
+    }
+    
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
