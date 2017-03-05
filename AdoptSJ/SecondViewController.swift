@@ -72,7 +72,7 @@ class SecondViewController: UIViewController {
     }
     
     func openPickPlace(){
-        let center = CLLocationCoordinate2D(latitude: 37.788204, longitude: -122.411937)
+        let center = CLLocationCoordinate2D(latitude: 37.349642, longitude: -121.938987)
         let northEast = CLLocationCoordinate2D(latitude: center.latitude + 0.001, longitude: center.longitude + 0.001)
         let southWest = CLLocationCoordinate2D(latitude: center.latitude - 0.001, longitude: center.longitude - 0.001)
         let viewport = GMSCoordinateBounds(coordinate: northEast, coordinate: southWest)

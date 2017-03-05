@@ -22,18 +22,18 @@
                                 <rect key="frame" x="0.0" y="22" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mZY-Ga-fLM" id="k1T-fu-She">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vo6-bh-9SF">
-                                            <rect key="frame" x="15" y="6" width="31.5" height="19.5"/>
+                                            <rect key="frame" x="15" y="5" width="32" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IID-XK-1cg">
-                                            <rect key="frame" x="15" y="25.5" width="40.5" height="13.5"/>
+                                            <rect key="frame" x="15" y="25" width="41" height="14"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -55,7 +55,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fo6-Uv-KQz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1682.4000000000001" y="-433.13343328335833"/>
+            <point key="canvasLocation" x="2621.5999999999999" y="-433.13343328335833"/>
         </scene>
         <!--Adoption Detail View Controller-->
         <scene sceneID="7mx-GB-ndo">
@@ -74,7 +74,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aRw-ce-8VG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2414" y="-433"/>
+            <point key="canvasLocation" x="3352.8000000000002" y="-433.13343328335833"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="wg7-f3-ORb">
@@ -221,20 +221,22 @@
                     </tabBar>
                     <connections>
                         <segue destination="X0P-f6-8OT" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
-                        <segue destination="Vdu-dy-Feg" kind="relationship" relationship="viewControllers" id="JbH-hH-mWh"/>
+                        <segue destination="QqE-OE-6eL" kind="relationship" relationship="viewControllers" id="JbH-hH-mWh"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-82" y="-126"/>
         </scene>
-        <!--Second-->
+        <!--Navigation Controller-->
         <scene sceneID="5fc-J4-fy1">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="X0P-f6-8OT" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="" image="AdoptSJ40" selectedImage="AdoptSJ40" id="cPa-gy-q4n">
+                        <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
+                    </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="s0M-n4-9yr">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="s0M-n4-9yr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -247,8 +249,30 @@
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="359.37031484257875"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dN6-3i-prz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QqE-OE-6eL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="regular-profile40" selectedImage="regular-profile40" id="336-vm-dmy">
+                        <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="5D2-yJ-FsG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Vdu-dy-Feg" kind="relationship" relationship="rootViewController" id="oLG-uw-wQS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TkK-s4-3OV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1682.4000000000001" y="-433.13343328335833"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="second" width="30" height="30"/>
+        <image name="AdoptSJ40" width="40" height="40"/>
+        <image name="regular-profile40" width="40" height="40"/>
     </resources>
 </document>
