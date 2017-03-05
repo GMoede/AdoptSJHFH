@@ -8,10 +8,12 @@
 
 import UIKit
 import MessageUI
+import RealmSwift
 
 
 
-class EmailFormViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate {
+
+class EmailFormViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate, MFMailComposeViewControllerDelegate {
 
     var name: String?
     var address: String?
@@ -128,6 +130,14 @@ class EmailFormViewController: UIViewController, UITextFieldDelegate, UITextView
     func mailComposeController(_ controller: MFMailComposeViewController,
                                didFinishWith result: MFMailComposeResult, error: Error?) {
         // Check the result or perform other tasks.
+        let submittedItem = AdoptionItem()
+        submittedItem.name = self.placeName.text
+        submittedItem.address = self.placeAddress.text
+        submittedItem.desc = self.adoptionPreferences.text
+        submittedItem.status = false
+        
+        
+        
         
         print(result.rawValue)
         

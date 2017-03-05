@@ -13,5 +13,5 @@ class AdoptionItem: Object {
     var name: String?
     var address: String?
     var desc: String?
-    var status: String?
+    var status: Bool?
 }
