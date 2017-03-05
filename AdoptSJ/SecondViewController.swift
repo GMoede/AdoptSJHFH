@@ -18,6 +18,7 @@ class SecondViewController: UIViewController {
     // Add a pair of UILabels in Interface Builder, and connect the outlets to these variables.
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var addressLabel: UILabel!
+    @IBOutlet weak var placeImage: UIImageView!
     
     // Add a UIButton in Interface Builder, and connect the action to this function.
     /* @IBAction func pickPlace(_ sender: UIButton) {
@@ -72,7 +73,7 @@ class SecondViewController: UIViewController {
     }
     
     func openPickPlace(){
-        let center = CLLocationCoordinate2D(latitude: 37.788204, longitude: -122.411937)
+        let center = CLLocationCoordinate2D(latitude: 37.349642, longitude: -121.938987)
         let northEast = CLLocationCoordinate2D(latitude: center.latitude + 0.001, longitude: center.longitude + 0.001)
         let southWest = CLLocationCoordinate2D(latitude: center.latitude - 0.001, longitude: center.longitude - 0.001)
         let viewport = GMSCoordinateBounds(coordinate: northEast, coordinate: southWest)
@@ -88,7 +89,7 @@ class SecondViewController: UIViewController {
                 self.nameLabel.text = place.name
                 self.addressLabel.text = place.formattedAddress?.components(separatedBy: ", ")
                     .joined(separator: "\n")
-                
+                self.loadPhoto(placeID: place.placeID)
             } else {
                 self.nameLabel.text = "No place selected"
                 self.addressLabel.text = ""
@@ -97,7 +98,33 @@ class SecondViewController: UIViewController {
 
     }
     
-    
+    func loadImageforMetadata(photoMetadata: GMSPlacePhotoMetadata){
+        GMSPlacesClient.shared().loadPlacePhoto(photoMetadata, callback: {
+            (photo, error)-> Void in
+            if let error = error {
+                //Error control
+                print("Fuckup")
+            } else {
+                self.placeImage.image = photo;
+                //self.attributionTextView.attributedText = photoMetadata.attributions;
+            }
+        })
+    }
+    func loadPhoto(placeID: String)
+    {
+        GMSPlacesClient.shared().lookUpPhotos(forPlaceID: placeID) { (photos, error) -> Void in
+            if let error = error {
+                //Taking care of any errors
+                print("You fucked up");
+                
+            } else {
+                if let firstphoto = photos?.results.first {
+                    self.loadImageforMetadata(photoMetadata: firstphoto)
+                }
+            }
+        }
+    }
+
     
 }
 

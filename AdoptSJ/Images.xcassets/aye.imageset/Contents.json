@@ -1,7 +1,9 @@
 {
   "images" : [
     {
-      "idiom" : "universal"
+      "idiom" : "universal",
+      "filename" : "aye.png",
+      "scale" : "1x"
     }
   ],
   "info" : {
