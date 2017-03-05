@@ -20,6 +20,7 @@ class AdoptionDetailViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = selectedAdoption?.name
         print(self.selectedAdoption?.name)
         //self.title =
         //print("poop")

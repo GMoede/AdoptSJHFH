@@ -32,12 +32,13 @@ class AdoptionTableViewController: UITableViewController {
         print("prepare for segue reached")
         if segue.identifier == "adoptionDetail" {
             print("segue identifier reached")
-            let nextScene = segue.destination as? AdoptionDetailViewController
+            let nextSceneNav = segue.destination as! UINavigationController
+            let nextScene = nextSceneNav.viewControllers.first as! AdoptionDetailViewController
             let indexPath = self.tableView.indexPathForSelectedRow!
             let row = indexPath.row
             let section = indexPath.section
             let selectedAdoption = adoptionItems.items[section][row]
-            nextScene?.selectedAdoption = selectedAdoption
+            nextScene.selectedAdoption = selectedAdoption
             print(selectedAdoption.name)
             //print(nextScene?.selectedAdoption)
             //print(selectedAdoption.name)
