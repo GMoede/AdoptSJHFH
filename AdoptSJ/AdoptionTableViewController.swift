@@ -37,7 +37,8 @@ class AdoptionTableViewController: UITableViewController {
             let row = indexPath.row
             let section = indexPath.section
             let selectedAdoption = adoptionItems.items[section][row]
-            nextScene?.title = selectedAdoption.name
+            nextScene?.selectedAdoption = selectedAdoption
+            print(selectedAdoption.name)
             //print(nextScene?.selectedAdoption)
             //print(selectedAdoption.name)
             

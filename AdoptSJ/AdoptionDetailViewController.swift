@@ -16,10 +16,11 @@ class AdoptionDetailViewController: UIViewController{
     //var row = 0
     //v//ar section = 0
     ///var selectedAdoption: AdoptionItem = SpecificMenuItems().items[0][0]
-    //let selectedAdoption: AdoptionItem
+    var selectedAdoption: AdoptionItem?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(self.selectedAdoption?.name)
         //self.title =
         //print("poop")
         //print(selectedAdoption)
@@ -30,6 +31,10 @@ class AdoptionDetailViewController: UIViewController{
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+  /*  override func viewDidAppear(_ animated: Bool) {
+        <#code#>
+    }*/
     
 
     /*
