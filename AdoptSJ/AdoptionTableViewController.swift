@@ -10,7 +10,6 @@ import UIKit
 
 class AdoptionTableViewController: UITableViewController {
 
-    
     var myOrder = AdoptionItem()
     let adoptionItems = SpecificMenuItems()
     override func viewDidLoad() {
@@ -36,8 +35,8 @@ class AdoptionTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let row = indexPath.row
         let section = indexPath.section
-        let order = menuItems.items[section][row]
-        order.name += " " + menuItems.sections[section]
+        let order = adoptionItems.items[section][row]
+        order.name += " " + adoptionItems.sections[section]
         navigationItem.title = order.name
     }
 
