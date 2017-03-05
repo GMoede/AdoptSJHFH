@@ -196,6 +196,9 @@
                                 <rect key="frame" x="122" y="442" width="130" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Submit Application"/>
+                                <connections>
+                                    <action selector="createEmailToSend:" destination="Ogy-PJ-OHB" eventType="touchUpInside" id="sge-PF-PQ5"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8ZD-8F-zML">
                                 <rect key="frame" x="24" y="240" width="240" height="128"/>
