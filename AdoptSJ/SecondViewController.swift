@@ -43,6 +43,11 @@ class SecondViewController: UIViewController {
         })
     }*/
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "formDetail"){
+            let segue.
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

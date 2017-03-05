@@ -10,13 +10,20 @@ import UIKit
 
 class EmailFormViewController: UIViewController {
 
-    
+    @IBOutlet weak var placeName: UITextField!
+    @IBOutlet weak var placeAddress: UITextField!
+    @IBOutlet weak var phoneNumber: UITextField!
+    @IBOutlet weak var emailAddress: UITextField!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //phoneNumber.text = "Phone"
         // Do any additional setup after loading the view.
+        
+        placeName = 
+        placeAddress =
+        phoneNumber.text = "phone"
+        emailAddress.accessibilityHint = "email"
     }
 
     override func didReceiveMemoryWarning() {
