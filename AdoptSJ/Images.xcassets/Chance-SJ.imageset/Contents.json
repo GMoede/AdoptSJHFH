@@ -1,7 +1,9 @@
 {
   "images" : [
     {
-      "idiom" : "universal"
+      "idiom" : "universal",
+      "filename" : "Chance-SJ.png",
+      "scale" : "1x"
     }
   ],
   "info" : {
