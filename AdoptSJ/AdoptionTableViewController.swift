@@ -29,6 +29,19 @@ class AdoptionTableViewController: UITableViewController {
     var notificationToken: NotificationToken!
     var realm: Realm!
     
+    override func viewDidAppear(_ animated: Bool) {
+        /*if(true){
+        let testItem1: AdoptionItem = AdoptionItem()
+        testItem1.name = "Kelley Park"
+        testItem1.address = "Senter Road, San Jose"
+        testItem1.desc = "Family oriented park with plenty of great scenery and foliage."
+        testItem1.status = false
+        items.append(testItem1)
+        }*/
+        //viewDidLoad()
+        print(items.count)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Adoptions"
@@ -48,17 +61,25 @@ class AdoptionTableViewController: UITableViewController {
         testItem1.address = "755 Locust Street"
         testItem1.desc = "Cool place to be. We got two nicks here right now which is right crazy dog."
         testItem1.status = false
+        
+        let testItem2: AdoptionItem = AdoptionItem()
+        testItem2.name = "Kelley Park"
+        testItem2.address = "Senter Road, San Jose"
+        testItem2.desc = "Family oriented park with plenty of great scenery and foliage."
+        testItem2.status = false
+        //items.append(testItem2)
         //testItem1.save()
         
         
         
         
-        setupRealm()
+        /*setupRealm()
         try! realm = Realm()
         try! realm.write {
             realm.deleteAll()
-        }
+        }*/
         items.append(testItem1)
+        items.append(testItem2)
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
 
     }
@@ -134,7 +155,7 @@ class AdoptionTableViewController: UITableViewController {
         // Log in existing user with username and password
         let username = "griffinmoede@gmail.com"  // <--- Update this
         let password = "Happify1996"  // <--- Update this
-        SyncUser.logIn(with: .usernamePassword(username: username, password: password, register: false), server: URL(string: "http://127.0.0.1:9080")!) { user, error in
+        SyncUser.logIn(with: .usernamePassword(username: username, password: password, register: false), server: URL(string: "http://172.21.94.135")!) { user, error in
             guard let user = user else {
                 fatalError(String(describing: error))
             }
