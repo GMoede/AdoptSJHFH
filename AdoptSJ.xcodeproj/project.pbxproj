@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02DEF173676E90196C1A845E /* Pods_AdoptSJ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2062E243D914A95C719FCD2D /* Pods_AdoptSJ.framework */; };
+		8433D4A2EFB16FDB2C853AF0 /* Pods_AdoptSJTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65A2FD6D1516E2D8B40A9174 /* Pods_AdoptSJTests.framework */; };
 		B18CD83A1E6B513700D8C8E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18CD8391E6B513700D8C8E9 /* AppDelegate.swift */; };
 		B18CD83C1E6B513700D8C8E9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18CD83B1E6B513700D8C8E9 /* FirstViewController.swift */; };
 		B18CD83E1E6B513700D8C8E9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18CD83D1E6B513700D8C8E9 /* SecondViewController.swift */; };
@@ -30,6 +32,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2062E243D914A95C719FCD2D /* Pods_AdoptSJ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdoptSJ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FAEDB95B9204BF9207C1A9A /* Pods-AdoptSJTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdoptSJTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AdoptSJTests/Pods-AdoptSJTests.release.xcconfig"; sourceTree = "<group>"; };
+		4CC0B815E026A733CE0C7650 /* Pods-AdoptSJ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdoptSJ.release.xcconfig"; path = "Pods/Target Support Files/Pods-AdoptSJ/Pods-AdoptSJ.release.xcconfig"; sourceTree = "<group>"; };
+		65A2FD6D1516E2D8B40A9174 /* Pods_AdoptSJTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdoptSJTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9499B6C058C5A83F80475DF4 /* Pods-AdoptSJTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdoptSJTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AdoptSJTests/Pods-AdoptSJTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B18CD8341E6B513700D8C8E9 /* AdoptSJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdoptSJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B18CD8381E6B513700D8C8E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B18CD8391E6B513700D8C8E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +51,7 @@
 		B18CD85D1E6B6BB900D8C8E9 /* AdoptionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdoptionTableViewController.swift; sourceTree = "<group>"; };
 		B18CD85F1E6B6F4400D8C8E9 /* AdoptionItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdoptionItem.swift; sourceTree = "<group>"; };
 		B18CD8611E6B70B200D8C8E9 /* AdoptionItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdoptionItems.swift; sourceTree = "<group>"; };
+		BC26C5BCAED2B9F5AE3965E8 /* Pods-AdoptSJ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdoptSJ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AdoptSJ/Pods-AdoptSJ.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02DEF173676E90196C1A845E /* Pods_AdoptSJ.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,18 +67,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8433D4A2EFB16FDB2C853AF0 /* Pods_AdoptSJTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19D9FD66A5E59B6B15771511 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2062E243D914A95C719FCD2D /* Pods_AdoptSJ.framework */,
+				65A2FD6D1516E2D8B40A9174 /* Pods_AdoptSJTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95BF96D3A305EFF83D4E3A9F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BC26C5BCAED2B9F5AE3965E8 /* Pods-AdoptSJ.debug.xcconfig */,
+				4CC0B815E026A733CE0C7650 /* Pods-AdoptSJ.release.xcconfig */,
+				9499B6C058C5A83F80475DF4 /* Pods-AdoptSJTests.debug.xcconfig */,
+				3FAEDB95B9204BF9207C1A9A /* Pods-AdoptSJTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B18CD82B1E6B513700D8C8E9 = {
 			isa = PBXGroup;
 			children = (
 				B18CD8361E6B513700D8C8E9 /* AdoptSJ */,
 				B18CD84E1E6B513800D8C8E9 /* AdoptSJTests */,
 				B18CD8351E6B513700D8C8E9 /* Products */,
+				95BF96D3A305EFF83D4E3A9F /* Pods */,
+				19D9FD66A5E59B6B15771511 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,9 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B18CD8551E6B513800D8C8E9 /* Build configuration list for PBXNativeTarget "AdoptSJ" */;
 			buildPhases = (
+				AE6E5FF2065426BB4C010495 /* [CP] Check Pods Manifest.lock */,
 				B18CD8301E6B513700D8C8E9 /* Sources */,
 				B18CD8311E6B513700D8C8E9 /* Frameworks */,
 				B18CD8321E6B513700D8C8E9 /* Resources */,
+				8894B8F1C102ECA6951D813A /* [CP] Embed Pods Frameworks */,
+				E4AC643B2E4D49FFFE42B426 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -148,9 +183,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B18CD8581E6B513800D8C8E9 /* Build configuration list for PBXNativeTarget "AdoptSJTests" */;
 			buildPhases = (
+				3A540702F4D23BDC7496ABC4 /* [CP] Check Pods Manifest.lock */,
 				B18CD8471E6B513800D8C8E9 /* Sources */,
 				B18CD8481E6B513800D8C8E9 /* Frameworks */,
 				B18CD8491E6B513800D8C8E9 /* Resources */,
+				D727B1652276A984E6FE859B /* [CP] Embed Pods Frameworks */,
+				CE6DF54D954A484F2A82AB69 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -218,6 +256,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A540702F4D23BDC7496ABC4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8894B8F1C102ECA6951D813A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AdoptSJ/Pods-AdoptSJ-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE6E5FF2065426BB4C010495 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CE6DF54D954A484F2A82AB69 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AdoptSJTests/Pods-AdoptSJTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D727B1652276A984E6FE859B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AdoptSJTests/Pods-AdoptSJTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4AC643B2E4D49FFFE42B426 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AdoptSJ/Pods-AdoptSJ-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B18CD8301E6B513700D8C8E9 /* Sources */ = {
@@ -350,6 +481,7 @@
 		};
 		B18CD8561E6B513800D8C8E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC26C5BCAED2B9F5AE3965E8 /* Pods-AdoptSJ.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AdoptSJ/Info.plist;
@@ -361,6 +493,7 @@
 		};
 		B18CD8571E6B513800D8C8E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CC0B815E026A733CE0C7650 /* Pods-AdoptSJ.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AdoptSJ/Info.plist;
@@ -372,6 +505,7 @@
 		};
 		B18CD8591E6B513800D8C8E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9499B6C058C5A83F80475DF4 /* Pods-AdoptSJTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -391,6 +525,7 @@
 		};
 		B18CD85A1E6B513800D8C8E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FAEDB95B9204BF9207C1A9A /* Pods-AdoptSJTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
