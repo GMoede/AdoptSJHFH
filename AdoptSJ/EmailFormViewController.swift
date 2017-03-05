@@ -110,8 +110,13 @@ class EmailFormViewController: UIViewController, UITextFieldDelegate, UITextView
         submittedItem.desc = self.adoptionPreferences.text
         submittedItem.status = false
         realm = try! Realm()
+        let items = try! Realm().objects(AdoptionItem.self)
+        /*try! items.realm?.write {
+            items.insert(submittedItem, at: items.count)
+        }*/
         try! realm?.write {
             realm?.add(submittedItem)
+            
         }
         if !MFMailComposeViewController.canSendMail() {
             print("Mail services are not available")

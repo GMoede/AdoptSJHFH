@@ -20,12 +20,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        do{
-        try FileManager.default.removeItem(at: Realm.Configuration.defaultConfiguration.fileURL!)
-        } catch let error as NSError{
-            return false
-        }
-    
+        
+        UINavigationBar.appearance().barTintColor = UIColor(red: 31.0/255.0, green: 147.0/255.0, blue: 141.0/255.0, alpha: 1.0)
+        
+        let attrs = [
+            NSForegroundColorAttributeName: UIColor.white,
+            NSFontAttributeName: UIFont(name: "Avenir", size: 20)!
+        ]
+        
+        UINavigationBar.appearance().titleTextAttributes = attrs
+        
         GMSPlacesClient.provideAPIKey("AIzaSyDFikIxzbWyI0Jndgp-36boMyhgOS27FaU")
         GMSServices.provideAPIKey("AIzaSyDFikIxzbWyI0Jndgp-36boMyhgOS27FaU")
         // Override point for customization after application launch.
