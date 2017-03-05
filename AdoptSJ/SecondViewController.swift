@@ -51,6 +51,9 @@ class SecondViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    @IBAction func reOpenPicker(_ sender: UIButton){
+        openPickPlace()
+    }
     
     
     override func didReceiveMemoryWarning() {
@@ -75,6 +78,7 @@ class SecondViewController: UIViewController {
                 self.nameLabel.text = place.name
                 self.addressLabel.text = place.formattedAddress?.components(separatedBy: ", ")
                     .joined(separator: "\n")
+                
             } else {
                 self.nameLabel.text = "No place selected"
                 self.addressLabel.text = ""

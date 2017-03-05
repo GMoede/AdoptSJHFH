@@ -21,6 +21,7 @@
 		B18CD85E1E6B6BB900D8C8E9 /* AdoptionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18CD85D1E6B6BB900D8C8E9 /* AdoptionTableViewController.swift */; };
 		B18CD8601E6B6F4400D8C8E9 /* AdoptionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18CD85F1E6B6F4400D8C8E9 /* AdoptionItem.swift */; };
 		B18CD8621E6B70B200D8C8E9 /* AdoptionItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18CD8611E6B70B200D8C8E9 /* AdoptionItems.swift */; };
+		D631FF471E6BC2F0005B1FF9 /* EmailFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D631FF461E6BC2F0005B1FF9 /* EmailFormViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		B18CD85F1E6B6F4400D8C8E9 /* AdoptionItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdoptionItem.swift; sourceTree = "<group>"; };
 		B18CD8611E6B70B200D8C8E9 /* AdoptionItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdoptionItems.swift; sourceTree = "<group>"; };
 		BC26C5BCAED2B9F5AE3965E8 /* Pods-AdoptSJ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdoptSJ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AdoptSJ/Pods-AdoptSJ.debug.xcconfig"; sourceTree = "<group>"; };
+		D631FF461E6BC2F0005B1FF9 /* EmailFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailFormViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 				B18CD8611E6B70B200D8C8E9 /* AdoptionItems.swift */,
 				B18CD8421E6B513700D8C8E9 /* Images.xcassets */,
 				B18CD8441E6B513700D8C8E9 /* LaunchScreen.xib */,
+				D631FF461E6BC2F0005B1FF9 /* EmailFormViewController.swift */,
 				B18CD85D1E6B6BB900D8C8E9 /* AdoptionTableViewController.swift */,
 				B18CD8371E6B513700D8C8E9 /* Supporting Files */,
 			);
@@ -363,6 +366,7 @@
 			files = (
 				B18CD83E1E6B513700D8C8E9 /* SecondViewController.swift in Sources */,
 				1F21B28E1E6BAC15000B6F68 /* AdoptionDetailViewController.swift in Sources */,
+				D631FF471E6BC2F0005B1FF9 /* EmailFormViewController.swift in Sources */,
 				B18CD8601E6B6F4400D8C8E9 /* AdoptionItem.swift in Sources */,
 				B18CD8621E6B70B200D8C8E9 /* AdoptionItems.swift in Sources */,
 				B18CD83A1E6B513700D8C8E9 /* AppDelegate.swift in Sources */,
