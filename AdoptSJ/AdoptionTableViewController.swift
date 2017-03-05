@@ -33,6 +33,13 @@ class AdoptionTableViewController: UITableViewController {
         return adoptionItems.sections[section]
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let row = indexPath.row
+        let section = indexPath.section
+        let order = menuItems.items[section][row]
+        order.name += " " + menuItems.sections[section]
+        navigationItem.title = order.name
+    }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
