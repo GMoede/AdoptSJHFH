@@ -105,8 +105,8 @@ class EmailFormViewController: UIViewController, UITextFieldDelegate, UITextView
         self.present(composeVC, animated: true, completion: nil)
     }
     
-    func mailComposeController(controller: MFMailComposeViewController,
-                               didFinishWithResult result: MFMailComposeResult, error: NSError?) {
+    func mailComposeController(_ controller: MFMailComposeViewController,
+                               didFinishWith result: MFMailComposeResult, error: Error?) {
         // Check the result or perform other tasks.
         
         // Dismiss the mail compose view controller.
