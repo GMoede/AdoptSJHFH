@@ -7,18 +7,13 @@
 //
 
 import UIKit
+import RealmSwift
 
-class AdoptionItems: NSObject {
-    var sections:[String] = []
-    var items:[[AdoptionItem]] = []
-    
-    func addSection(section: String, item: [AdoptionItem]){
-        sections = sections + [section]
-        items = items + [item]
-    }
-    override init() {}
+class AdoptionItems: Object {
+    let items = List<AdoptionItem>()
 }
 
+/*
 class SpecificMenuItems: AdoptionItems {
     override init() {
         super.init()
@@ -32,3 +27,4 @@ class SpecificMenuItems: AdoptionItems {
     }
     
 }
+*/

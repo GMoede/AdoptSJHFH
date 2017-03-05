@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import RealmSwift
 
 
 
 
 class AdoptionDetailViewController: UIViewController{
 
+    @IBOutlet weak var statusLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UITextView!
+    @IBOutlet weak var addressLabel: UILabel!
     //var row = 0
     //v//ar section = 0
     ///var selectedAdoption: AdoptionItem = SpecificMenuItems().items[0][0]
@@ -21,7 +25,9 @@ class AdoptionDetailViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = selectedAdoption?.name
-        print(self.selectedAdoption?.name)
+        self.addressLabel.text = selectedAdoption?.address
+        self.descriptionLabel.text = selectedAdoption?.desc
+        //print(self.selectedAdoption?.name)
         //self.title =
         //print("poop")
         //print(selectedAdoption)
