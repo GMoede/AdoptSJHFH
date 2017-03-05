@@ -8,11 +8,16 @@
 
 import UIKit
 
+
+
 class EmailFormViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate {
 
     var name: String?
     var address: String?
     
+
+    @IBAction func submitForm(segue:UIStoryboardSegue) {
+    }
     @IBOutlet weak var placeName: UITextField!
     @IBOutlet weak var placeAddress: UITextField!
     @IBOutlet weak var phoneNumber: UITextField!
@@ -85,6 +90,13 @@ class EmailFormViewController: UIViewController, UITextFieldDelegate, UITextView
         // Pass the selected object to the new view controller.
     }
     */
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "submitForm"){
+            let nextScene = segue.destination as! AdoptionTableViewController
+            let newAdoptionItem: AdoptionItem = AdoptionItem(name: self.placeName.text!, address: self.placeAddress.text!, desc: self.adoptionPreferences.text!)
+            nextScene.adoptionItems.items.append([newAdoptionItem])
+        }
+    }
 
     
     

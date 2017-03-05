@@ -8,11 +8,15 @@
 
 import UIKit
 
+static adoptionItems:AdoptionItem = nil
+
 class AdoptionTableViewController: UITableViewController {
     //order == selectedadoption
     var myOrder = AdoptionItem()
     let adoptionItems = SpecificMenuItems()
     //var delegate:AdoptionItemSelectionDelegate! = nil
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
