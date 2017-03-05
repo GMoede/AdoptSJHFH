@@ -10,9 +10,12 @@ import UIKit
 
 class EmailFormViewController: UIViewController {
 
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //phoneNumber.text = "Phone"
         // Do any additional setup after loading the view.
     }
 
