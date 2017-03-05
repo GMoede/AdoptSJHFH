@@ -119,7 +119,6 @@ class AdoptionTableViewController: UITableViewController {
     var desc: String?
     var status: String?
     var dummyItem: AdoptionItem!
-  
 
     
     func add() {
