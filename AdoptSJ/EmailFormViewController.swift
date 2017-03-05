@@ -104,11 +104,13 @@ class EmailFormViewController: UIViewController, UITextFieldDelegate, UITextView
 
  */
     @IBAction func createEmailToSend(_ sender: UIButton){
+        
         let submittedItem = AdoptionItem()
         submittedItem.name = self.placeName.text
         submittedItem.address = self.placeAddress.text
         submittedItem.desc = self.adoptionPreferences.text
         submittedItem.status = false
+        someItem.extraItem = submittedItem
         realm = try! Realm()
         let items = try! Realm().objects(AdoptionItem.self)
         /*try! items.realm?.write {

@@ -9,6 +9,10 @@
 import UIKit
 import RealmSwift
 
+struct someItem {
+    static var extraItem: AdoptionItem?
+}
+
 
 
 //static adoptionItems:AdoptionItem = nil
@@ -38,10 +42,10 @@ class AdoptionTableViewController: UITableViewController {
         testItem1.status = false
         items.append(testItem1)
         }*/
-        //viewDidLoad()
+        //viewDidLoad()//Look
         print(items.count)
     }
-    
+    let testItem1: AdoptionItem = AdoptionItem()
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Adoptions"
@@ -56,7 +60,7 @@ class AdoptionTableViewController: UITableViewController {
         
         
         
-        let testItem1: AdoptionItem = AdoptionItem()
+        
         testItem1.name = "Brick House"
         testItem1.address = "755 Locust Street"
         testItem1.desc = "Cool place to be. We got two nicks here right now which is right crazy dog."
@@ -67,6 +71,9 @@ class AdoptionTableViewController: UITableViewController {
         testItem2.address = "Senter Road, San Jose"
         testItem2.desc = "Family oriented park with plenty of great scenery and foliage."
         testItem2.status = false
+        if(someItem.extraItem?.status == false){
+            items.append(someItem.extraItem!)
+        }
         //items.append(testItem2)
         //testItem1.save()
         
